@@ -15,7 +15,7 @@ with open("api_key.txt","r") as f:
 def get_random_from_api():
     response = None
     try:
-        response = requests.get(BASE_URL+"word?key={}&number={}".format(API_KEY,1))        
+        response = requests.get(BASE_URL+"word?key={}&number={}".format(api_key,1))        
         response.raise_for_status()
     except HTTPError as http_err:
         print("HTTP error occured: {}".format(http_err))
