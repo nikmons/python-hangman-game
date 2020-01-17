@@ -23,6 +23,7 @@ def get_random_from_api():
         print("Error occured: {}".format(err))
     else:
         print("Fetching new random word from URL = {}".format(BASE_URL))
+        # Check response - API returns wrongapikey
         if debug:            
             print("Success")
         return re.sub('[\[\]"]','',"".join(response.content.decode("utf-8")))

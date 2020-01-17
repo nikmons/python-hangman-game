@@ -119,5 +119,6 @@ while counter > 0:
 else:
     if "_" in masked_word:
         print("You loose!")
+        print("The word was : {}".format("".join(random_word)))
 
 cprint(figlet_format("COMPLETED", font="digital"), "red", attrs=["underline"])
